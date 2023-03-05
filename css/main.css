@@ -7,6 +7,14 @@
     box-sizing: border-box;
  }
 
+ nav{
+    display: none;
+ }
+
+ ul{
+    list-style-type: none;
+ }
+
  body{
     font-family: 'Inter', sans-serif;
     font-size: 15px;
@@ -121,6 +129,91 @@ button{
     gap: 1rem;
     margin-top: 1rem; 
     flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1440px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 84%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+
+    .news_page{
+        align-content: center;
+        margin-left: 8rem;
+        margin-right: 3rem; 
+    }
+
+    .web_3{
+        margin: 1rem;
+        width: 55%;
+    }
+
+    .New{
+        position: relative;
+        left: 780px;
+        bottom: 502px;
+        height: 85%;
+        width: 25%;
+    }
+
+    .future_web{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .bright_web{
+        width: 20%;
+        margin-left: 1.8rem;
+    }
+
+    .dive{
+        position: relative;
+        left: 2px;
+        bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        gap: 1rem;
+        padding-left: 2rem;
+    }
+
+    .bottom_news{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-right: 7rem;
+        margin-top: -27rem;
+    }
+
+    .bottom_h2{
+        font-size: 1.1rem;
+    }
+
+    .bottom_p{
+        width: 70%;
+    }
+
+
 }
 
 
